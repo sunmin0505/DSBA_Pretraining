@@ -1,5 +1,5 @@
 # DSBA_Study
 
-cv
-nlp
+cv\
+nlp\
 ts
