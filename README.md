@@ -10,3 +10,7 @@ Data Augmentation
 - DEFAULT: Noramalization
 - WEAK: RandomCrop + HorizontalFlip
 - STRONG: RandomResizedCrop + HorizontalFlip + ColorJitter
+
+Model
+- resnet50
+- vit_small_patch16_224
