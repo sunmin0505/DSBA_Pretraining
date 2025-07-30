@@ -1,6 +1,6 @@
-## DSBA_Study
+# DSBA_Study
 
-# CV_Classification
+## CV_Classification
 
 실험 목적
 - CIFAR-10 데이터셋 기반 ResNet, ViT 비교
