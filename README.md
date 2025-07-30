@@ -7,6 +7,6 @@
 - 각 모델별로 data augmentation(default, weak, strong) 수행
 
 Data Augmentation
-- default: Noramalization
-- weak: RandomCrop + HorizontalFlip
-- strong: RandomResizedCrop + HorizontalFlip + ColorJitter
+- DEFAULT: Noramalization
+- WEAK: RandomCrop + HorizontalFlip
+- STRONG: RandomResizedCrop + HorizontalFlip + ColorJitter
