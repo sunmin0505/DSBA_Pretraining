@@ -8,8 +8,8 @@
 
 Data Augmentation
 - DEFAULT: Noramalization
-- WEAK: RandomCrop + HorizontalFlip
-- STRONG: RandomResizedCrop + HorizontalFlip + ColorJitter
+- WEAK:  Noramalization + RandomCrop(Padding) + HorizontalFlip
+- STRONG: Normalization + RandomResizedCrop + HorizontalFlip + ColorJitter
 
 Model
 - resnet50
