@@ -16,8 +16,8 @@ Model (timm에서 불러옴. pre-trained된 모델)
 - vit_small_patch16_224
 
 가설
-- 데이터셋이 작으니,, → CNN 기반 모델이 더 잘할 것이다?
-- 적당한 증강이 성능 향상에 도움이 된다? (과적합 등의 문제,,)
+- 데이터셋이 작으니 CNN 기반 모델이 더 잘할 것이다?
+- 적당한 증강이 성능 향상에 도움이 된다? (과적합 등 고려)
 
 결과
 - https://wandb.ai/sunmin_kim-seoul-national-university/cifar10-aug-experiment?nw=nwusersunmin_kim
