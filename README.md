@@ -11,7 +11,7 @@ Data Augmentation
 - WEAK:  Noramalization + RandomCrop(Padding) + HorizontalFlip
 - STRONG: Normalization + RandomResizedCrop + HorizontalFlip + ColorJitter
 
-Model
+Model (timm에서 불러옴. pre-trained된 모델)
 - resnet50
 - vit_small_patch16_224
 
