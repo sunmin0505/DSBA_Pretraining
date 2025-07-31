@@ -22,6 +22,7 @@ def get_cifar10_dataset(split: str, aug_level: str = "default", val_ratio: float
 
     if split == 'test':
         transform = transforms.Compose([
+            transforms.Resize(224),
             transforms.ToTensor(),
             get_normalize()
         ])
@@ -50,6 +51,7 @@ def get_cifar10_dataset(split: str, aug_level: str = "default", val_ratio: float
     else:
         # val에는 augmentation 제거
         val_set.dataset.transform = transforms.Compose([
+            transforms.Resize(224),
             transforms.ToTensor(),
             get_normalize()
         ])
