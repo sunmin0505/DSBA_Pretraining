@@ -29,4 +29,4 @@ Model (timm에서 불러옴. pre-trained된 모델)
 | ResNet50 + STRONG | 0.9502 |
 | ViT_small_patch16_224 + DEFAULT | 0.7863 |
 | ViT_small_patch16_224 + WEAK | 0.8440 |
-| ViT_small_patch16_224 + STRONG | 진행중 |
+| ViT_small_patch16_224 + STRONG | 0.7958 |
