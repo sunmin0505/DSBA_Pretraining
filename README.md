@@ -22,7 +22,7 @@ Model
 | --- | --- |
 | ResNet50 + DEFAULT | 0.9499 |
 | ResNet50 + WEAK | 0.9515 |
-| ResNet50 + STRONG | 0.9502 |
+| **ResNet50 + STRONG | 0.9502** |
 | ViT_small_patch16_224 + DEFAULT | 0.7863 |
 | ViT_small_patch16_224 + WEAK | 0.8440 |
 | ViT_small_patch16_224 + STRONG | 진행중 |
