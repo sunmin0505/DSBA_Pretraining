@@ -2,9 +2,9 @@
 
 ## CV_Classification
 
-- 실험 목적
- - CIFAR-10 데이터셋(Input Size: 32x32 → 224x224) 기반 ResNet, ViT 비교
- - 각 모델별로 data augmentation(default, weak, strong) 수행하여 그 결과를 비교
+실험 목적
+- CIFAR-10 데이터셋(Input Size: 32x32 → 224x224) 기반 ResNet, ViT 비교
+- 각 모델별로 data augmentation(default, weak, strong) 수행하여 그 결과를 비교
 
 Data Augmentation
 - DEFAULT: Noramalization
