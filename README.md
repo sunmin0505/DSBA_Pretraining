@@ -14,3 +14,6 @@ Data Augmentation
 Model
 - resnet50
 - vit_small_patch16_224
+
+결과
+- https://wandb.ai/sunmin_kim-seoul-national-university/cifar10-aug-experiment?nw=nwusersunmin_kim
