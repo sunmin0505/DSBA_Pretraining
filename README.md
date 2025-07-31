@@ -13,7 +13,7 @@ Data Augmentation
 
 Model (timm에서 불러옴. pre-trained된 모델)
 - resnet50 (약 25.6M)
-- vit_small_patch16_224 (약 22M)
+- vit_small_patch16_224 (약 22.1M)
 
 가설
 - 데이터셋이 작으니 CNN 기반 모델이 더 잘할 것이다?
