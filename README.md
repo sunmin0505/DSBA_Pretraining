@@ -20,8 +20,6 @@ Model (timm에서 pre-trained된 모델)
 - 적당한 증강이 성능 향상에 도움이 된다? (과적합 등 고려)
 
 결과
-- https://wandb.ai/sunmin_kim-seoul-national-university/cifar10-aug-experiment?nw=nwusersunmin_kim
-
 | Model | ACC |
 | --- | --- |
 | ResNet50 + DEFAULT | 0.9499 |
