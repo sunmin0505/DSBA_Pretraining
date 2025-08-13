@@ -23,6 +23,8 @@
   - Scheduler: constant
   - Epochs: 5
   - Seed: 42
+- Method
+  - 총 5번의 epochs 중, 가장 성능이 높은 val에 대해서 test 수행
 - Logging
   - Wandb로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
 ## 5. Result
