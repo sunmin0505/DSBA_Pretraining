@@ -1,4 +1,4 @@
-<img width="2528" height="1328" alt="train_loss" src="https://github.com/user-attachments/assets/ffe342dc-d38c-494b-a86c-acc7e32357c8" />## 1. 개요
+## 1. 개요
 - 실험 목적
   - BERT와 ModerBERT의 text classification 성능 검증
   - IMDB dataset을 통한 sentiment classification 수행
