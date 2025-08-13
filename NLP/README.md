@@ -10,3 +10,18 @@
 - 전처리
   - 토큰화: AutoTokenizer
   - max sequence length: 128
+## 3. Model
+- EncoderForClassification 직접 구현
+  - 사전학습된 Encoder + Dropout + Linear layer
+- Hugging Face에서 불러옴
+  - bert-base-uncased(110M)
+  - modernBERT-base(149M)
+## 4. Experiment Setup
+- Hyperparameter
+  - Optimizer: Adam
+  - Learning rate: 5e-5
+  - Scheduler: constant
+  - Epochs: 5
+  - Seed: 42
+- logging
+  - Wandb로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
