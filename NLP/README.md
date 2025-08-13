@@ -47,3 +47,7 @@
 |:---:|:---:|:---:|
 | accuracy | 0.9036 | 0.9148 |
 ## 6. Discussion
+- ModerBERT의 성능이 더 높았음
+  - ModernBERT는 BERT 대비 1) 긴 문맥 처리 능력을 갖고, 2) Atttention 설계(local+global 교차 사용)가 효율적이며, 3) GeGLU 활성화 함수를 사용하여 표현력을 높임
+- Coding
+  - token_type_ids: ModernBERT는 token_type_ids가 필요 없음, 또한 IMDB는 단일 문장이라 BERT에도 필요 없음
