@@ -28,6 +28,6 @@
 - Logging
   - Wandb로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
 ## 5. Result
-<img width="2528" height="1328" alt="test_acc" src="https://github.com/user-attachments/assets/e440541e-b761-488c-8640-7b3b3e21475e" />
+<img width="600" height="300" alt="test_acc" src="https://github.com/user-attachments/assets/e440541e-b761-488c-8640-7b3b3e21475e" />
 
 ## 6. Discussion
