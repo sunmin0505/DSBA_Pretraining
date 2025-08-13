@@ -44,6 +44,6 @@
 <img width="600" height="300" alt="test_acc" src="https://github.com/user-attachments/assets/e440541e-b761-488c-8640-7b3b3e21475e" />
 
 | | BERT | ModernBERT |
-|---|---|---|
+|:---:|:---:|:---:|
 | accuracy | 0.9036 | 0.9148 |
 ## 6. Discussion
