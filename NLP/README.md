@@ -1,7 +1,7 @@
 ## 1. 개요
 - 실험 목적
   - BERT와 ModerBERT의 text classification 성능 검증
-  - IMDB dataset을 통한 sentiment classification
+  - IMDB dataset을 통한 sentiment classification 수행
 
 ## 2. Dataset
 - 데이터 구성
@@ -23,5 +23,8 @@
   - Scheduler: constant
   - Epochs: 5
   - Seed: 42
-- logging
+- Logging
   - Wandb로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
+## 5. Result
+
+## 6. Discussion
