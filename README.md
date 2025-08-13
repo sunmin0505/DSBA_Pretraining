@@ -1,6 +1,6 @@
 # DSBA_Study
 
-## CV_Classification
+## CV
 
 실험 목적
 - CIFAR-10 데이터셋(Input Size: 32x32 → 224x224) 기반 ResNet, ViT 비교
@@ -28,3 +28,7 @@ Model (timm에서 pre-trained된 모델)
 | ViT_small_patch16_224 + DEFAULT | 0.7863 |
 | ViT_small_patch16_224 + WEAK | 0.8440 |
 | ViT_small_patch16_224 + STRONG | 0.7958 |
+
+## NLP
+
+실험 목적
