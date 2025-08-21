@@ -2,8 +2,8 @@
 - 실험 목적
   - ModerBERT의 batch size별 text classification 성능 검증
   - IMDB dataset을 통한 sentiment classification 수행
-  - Single GPu 하에, 큰 batch size(256, 1024)를 적용하기 위해 gradient accumulation 적용
-  - Gradient accumulation 적용 시, HuggingFace의 Accelerator 모듈 사용
+  - Single GPU 하에, 큰 batch size(256, 1024)를 적용하기 위해 gradient accumulation 적용
+  - HuggingFace의 Accelerator 모듈 사용
 ## 2. Dataset
 - 데이터 구성
   - IMDB 영화 리뷰: 25,000개의 train + 25,000개의 test
@@ -36,23 +36,18 @@
   - Accelerator로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
 ## 5. Result
 1) 모든 모델의 learning rate 동일하게 고정
-
-
-- train loss
-
-
-- valid accuracy
-<img width="600" height="300" alt="val_acc" src="https://github.com/user-attachments/assets/71d3688d-0a41-4592-ac78-b3e2ffb1bcb6" />
-
-- valid loss
-<img width="600" height="300" alt="val_loss" src="https://github.com/user-attachments/assets/c6b5091e-408c-46bc-ac4b-b3df7d8a33e9" />
-
 - test accuracy
-<img width="600" height="300" alt="test_acc" src="https://github.com/user-attachments/assets/e440541e-b761-488c-8640-7b3b3e21475e" />
+- test loss
+| Batch Sizse | 64 | 256 | 1024 |
+|:---:|:---:|:---:|:---:|
+| accuracy | 0.9036 | 0.9148 | 0.0000 |
 
-| | BERT | ModernBERT |
-|:---:|:---:|:---:|
-| accuracy | 0.9036 | 0.9148 |
+2) Batch size 별로 learning rate를 sqrt scaling
+
+| Batch Sizse | 64 | 256 | 1024 |
+|:---:|:---:|:---:|:---:|
+| accuracy | 0.9036 | 0.9148 | 0.0000 |
+
 ## 6. Discussion
 - ModerBERT의 성능이 더 높았음
   1) 긴 문맥 처리 능력
