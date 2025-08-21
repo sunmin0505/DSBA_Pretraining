@@ -1,4 +1,4 @@
-## 1. 개요
+<img width="2528" height="1328" alt="1_val_acc" src="https://github.com/user-attachments/assets/021305a2-84ca-40bd-b96d-f16108a450d3" /><img width="2528" height="1328" alt="1_test_acc" src="https://github.com/user-attachments/assets/7164089b-1722-4a89-9abf-b3bcf95915d4" />## 1. 개요
 - 실험 목적
   - ModerBERT의 batch size별 text classification 성능 검증
   - IMDB dataset을 통한 sentiment classification 수행
@@ -35,18 +35,31 @@
 - Logging
   - Accelerator로 train_acc, train_loss, val_acc, val_loss, test_acc 기록
 ## 5. Result
-1) 모든 모델의 learning rate 동일하게 고정
+1) 모든 모델의 learning rate (5e-5) 동일하게 고정
+- train accuracy
+  <img width="2528" height="1328" alt="1_train_acc" src="https://github.com/user-attachments/assets/331d8837-87fe-4ffd-9c25-28e86a0ab023" />
+  
+- train loss
+  <img width="2528" height="1328" alt="1_train_loss" src="https://github.com/user-attachments/assets/07b6a6ad-7a64-4a27-9f9a-00c56cba28a8" />
+
+- validation accuracy
+  <img width="2528" height="1328" alt="1_val_acc" src="https://github.com/user-attachments/assets/620b01c0-ec1e-4127-945b-e6272e2d6396" />
+
+- validation loss
+  <img width="2528" height="1328" alt="1_val_loss" src="https://github.com/user-attachments/assets/23a6410a-fb34-48dd-9711-fabf9f0679a9" />
+
 - test accuracy
-- test loss
-| Batch Sizse | 64 | 256 | 1024 |
+  <img width="2528" height="1328" alt="1_test_acc" src="https://github.com/user-attachments/assets/42aa3c56-fd6c-4b3d-a5f9-8ce1954b0b7c" />
+
+| Batch Size | 64 | 256 | 1024 |
 |:---:|:---:|:---:|:---:|
-| accuracy | 0.9036 | 0.9148 | 0.0000 |
+| accuracy | 0.9036 | **0.9148** | 0.8902 |
 
 2) Batch size 별로 learning rate를 sqrt scaling
 
-| Batch Sizse | 64 | 256 | 1024 |
+| Batch Size | 64 | 256 | 1024 |
 |:---:|:---:|:---:|:---:|
-| accuracy | 0.9036 | 0.9148 | 0.0000 |
+| accuracy | 0.9084 | 0.9094 | 0.0000 |
 
 ## 6. Discussion
 - ModerBERT의 성능이 더 높았음
