@@ -83,7 +83,7 @@
 | accuracy | **0.9158** | 0.9126 | 0.8966 |
 
 ## 6. Discussion
-- Batch size가 다를 경우, Learning rate의 조정이 필요함
+- Batch size가 다를 경우, Learning rate의 조정이 필요할 것임
   - Linear scaling, Sqrt scaling
 - 마지막 checkpoint를 test에 적용한 이유
   - overfitting 영향까지 고려하기 위함?
