@@ -1,4 +1,4 @@
-## 1. 개요
+<img width="2528" height="1328" alt="2_train_l" src="https://github.com/user-attachments/assets/a8b6846e-36d1-4695-a345-235fe566652d" />## 1. 개요
 - 실험 목적
   - ModerBERT의 batch size별 text classification 성능 검증
   - IMDB dataset을 통한 sentiment classification 수행
@@ -53,19 +53,37 @@
 
 | Batch Size | 64 | 256 | 1024 |
 |:---:|:---:|:---:|:---:|
-| accuracy | 0.9036 | **0.9148** | 0.8902 |
+| accuracy | 0.9084 | **0.9094** | 0.8902 |
 
 2) Batch size 별로 learning rate를 sqrt scaling
+- sqrt scaling을 적용한 이유
+  - linear scaling을 적용했을 때, 256 batch size (lr = 2e-4)에서 성능이 급락함을 확인
+    <img width="2528" height="1328" alt="test_lr" src="https://github.com/user-attachments/assets/ca1e02a6-c3cc-4227-8f18-efbe224bbd36" />
+    | Learniung rate | 2e-4 | 1e-2 |
+    |:---:|:---:|:---:|
+    | accuracy | 0.8226 | **0.9094** |
 
-| Batch Size | 64 | 256 | 1024 |
+- train accuracy
+  <img width="2528" height="1328" alt="2_train_a" src="https://github.com/user-attachments/assets/b3661875-6301-435f-b29f-d1155e04bda4" />
+
+- train loss
+  <img width="2528" height="1328" alt="2_train_l" src="https://github.com/user-attachments/assets/388b7489-1f89-434d-9b94-5a7e50b26799" />
+
+- validation accruracy
+  <img width="2528" height="1328" alt="2_v_a" src="https://github.com/user-attachments/assets/5327e4c6-fbaa-41fd-afc0-3952e5bd72e5" />
+
+- validation loss
+  <img width="2528" height="1328" alt="2_v_l" src="https://github.com/user-attachments/assets/fa018921-0725-4371-afc9-aaa4e6a53b70" />
+
+- test accuracy
+  <img width="2528" height="1328" alt="2_test_a" src="https://github.com/user-attachments/assets/380f7f11-31ef-443d-82f7-01e4428d6f0c" />
+
+| Batch Size | 64 (5e-5) | 256 (1e-4) | 1024 (2e-4) |
 |:---:|:---:|:---:|:---:|
-| accuracy | 0.9084 | 0.9094 | 0.0000 |
+| accuracy | **0.9158** | 0.9126 | 0.8966 |
 
 ## 6. Discussion
-- ModerBERT의 성능이 더 높았음
-  1) 긴 문맥 처리 능력
-  2) Atttention 설계(local+global 교차 사용)가 효율적
-  3) GeGLU 활성화 함수를 사용하여 표현력을 높임
-  4) bias 제거, unpadding 등으로 계산 효율성 증가
-- Coding
-  - token_type_ids 구현하지 않음: ModernBERT는 token_type_ids가 필요 없음, 또한 IMDB는 단일 문장이라 BERT에도 필요 없음
+- Batch size가 다를 경우, Learning rate의 조정이 필요함
+  - Linear scaling, Sqrt scaling
+- 마지막 checkpoint를 test에 적용한 이유
+  - overfitting 영향까지 고려하기 위함?
