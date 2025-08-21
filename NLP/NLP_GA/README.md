@@ -1,4 +1,4 @@
-<img width="2528" height="1328" alt="1_val_acc" src="https://github.com/user-attachments/assets/021305a2-84ca-40bd-b96d-f16108a450d3" /><img width="2528" height="1328" alt="1_test_acc" src="https://github.com/user-attachments/assets/7164089b-1722-4a89-9abf-b3bcf95915d4" />## 1. 개요
+## 1. 개요
 - 실험 목적
   - ModerBERT의 batch size별 text classification 성능 검증
   - IMDB dataset을 통한 sentiment classification 수행
